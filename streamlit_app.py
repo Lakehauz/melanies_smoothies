@@ -36,3 +36,7 @@ if my_dataframe:
         st.write('Something went wrong.')
     else:
       st.success('There are no pending orders right now', icon='👍')
+
+import requests
+smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
+st.text(smoothiefroot_response)
